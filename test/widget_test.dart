@@ -7,7 +7,7 @@
 
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
-import 'package:sample_bloc_project_for_learning/counter/counter.dart';
+import 'package:sample_bloc_project_for_learning/counter/view/counter_page.dart';
 
 void main() {
   testWidgets('Counter increments smoke test', (WidgetTester tester) async {

@@ -1,12 +1,11 @@
 import 'package:bloc/bloc.dart';
-import 'package:flutter/material.dart';
-import 'package:sample_bloc_project_for_learning/counter/counter.dart';
+import 'package:flutter/cupertino.dart';
+import 'package:sample_bloc_project_for_learning/counter_observer.dart';
 
-import 'bloc_observer.dart';
+import 'app.dart';
 
 void main() {
-  Bloc.observer = const CounterObserver();
-  runApp(MaterialApp(
-    home: CounterPage(),
-  ));
+  Bloc.observer = CounterObserver();
+
+  runApp(CounterApp());
 }
